@@ -1,3 +1,6 @@
+#   this is for all platforms even android
+
+
 from kivy.app import App
 from kivy.uix.scatter import Scatter
 from kivy.uix.label import Label
