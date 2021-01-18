@@ -10,8 +10,8 @@ class GUI(tk.Frame):
         self.string_listener.set("Init Text")
         self.string_listener.trace("w", self.text_changed_callback)
 
-        entry_widget = tk.Entry(master, textvariable=self.string_listener)
-        entry_widget.pack()
+        entry_widget = tk.Entry(master, textvariable=self.string_listener,width=20)
+        entry_widget.grid(row=1,column=1,pady=10,padx=10)
 
     def text_changed_callback(self, *args):
         print("Text changed.")
